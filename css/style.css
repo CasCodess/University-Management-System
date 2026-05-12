@@ -1,0 +1,163 @@
+/* ==========================================================================
+   University Management System - Global Styles
+   ========================================================================== */
+
+/* --- Base & Typography --- */
+body {
+    background-color: #f4f7f6; /* Soft gray background for contrast */
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #495057;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-title {
+    color: #2c3e50;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* --- Main Layout --- */
+.main-content {
+    margin-left: 250px; 
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- Dashboard Statistic Cards --- */
+.stat-card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.stat-card .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.stat-icon {
+    font-size: 3rem;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.stat-card:hover .stat-icon {
+    opacity: 0.5;
+}
+
+.stat-numbers h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.stat-numbers h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
+
+/* --- Elegant Gradients --- */
+.bg-gradient-primary { background: linear-gradient(135deg, #4e73df 0%, #224abe 100%); }
+.bg-gradient-success { background: linear-gradient(135deg, #1cc88a 0%, #13855c 100%); }
+.bg-gradient-warning { background: linear-gradient(135deg, #f6c23e 0%, #dda20a 100%); }
+.bg-gradient-dark    { background: linear-gradient(135deg, #5a5c69 0%, #373840 100%); }
+.bg-gradient-danger  { background: linear-gradient(135deg, #e74a3b 0%, #be2617 100%); }
+.bg-gradient-info    { background: linear-gradient(135deg, #36b9cc 0%, #258391 100%); }
+
+/* --- Sidebar Styling (Prep for your next step) --- */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 2px 0 15px rgba(0,0,0,0.05);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #edf2f9;
+}
+
+.sidebar-menu {
+    padding: 15px 0;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    color: #6e829f;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.sidebar-link i {
+    margin-right: 15px;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar-link:hover, .sidebar-link.active {
+    background-color: #f8f9fc;
+    color: #4e73df;
+    border-right: 4px solid #4e73df;
+}
+
+/* --- Navbar Styling (Prep for your next step) --- */
+.top-navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-dropdown img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e3e6f0;
+}
+
+/* --- Tables & Forms (For future pages) --- */
+.custom-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: none;
+    margin-bottom: 24px;
+}
+
+.table th {
+    background-color: #f8f9fc;
+    color: #4e73df;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e3e6f0;
+}
